@@ -1,17 +1,408 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script>
-      // Hier deine Ziel-URL eingeben (dein Portfolio)
-      var target = "https://girnstein-david.framer.website";
-      // Dieser Teil hängt den Pfad (z.B. /work) einfach hinten dran
-      window.location.href = target + window.location.pathname + window.location.search;
-    </script>
-    <meta http-equiv="refresh" content="0; url=https://girnstein-david.framer.website">
-  </head>
-  <body>
-    Falls Sie nicht weitergeleitet werden, <a href="https://girnstein-david.framer.website">klicken Sie hier</a>.
-  </body>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>David Girnstein · Creative &amp; AI aus Köln</title>
+<meta name="description" content="David Girnstein aus Köln: früher Kamera, Sets und Social Media, heute AI-Agenten, Automatisierung und eigene Apps. AI Operations bei talentsconnect, Speaker auf der KI-X HR 2026.">
+<link rel="canonical" href="https://girnstein.studio/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="David Girnstein">
+<meta name="theme-color" content="#F5F4EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0B0B" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/david-girnstein.jpg">
+
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://girnstein.studio/">
+<meta property="og:site_name" content="David Girnstein">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="David Girnstein · Creative &amp; AI aus Köln">
+<meta property="og:description" content="Früher Kamera, Sets und Social Media, heute AI-Agenten, Automatisierung und eigene Apps.">
+<meta property="og:image" content="https://girnstein.studio/assets/david-girnstein.jpg">
+<meta property="og:image:width" content="543">
+<meta property="og:image:height" content="656">
+<meta property="og:image:alt" content="Porträt von David Girnstein">
+<meta property="profile:first_name" content="David">
+<meta property="profile:last_name" content="Girnstein">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="David Girnstein · Creative &amp; AI aus Köln">
+<meta name="twitter:description" content="Früher Kamera, Sets und Social Media, heute AI-Agenten, Automatisierung und eigene Apps.">
+<meta name="twitter:image" content="https://girnstein.studio/assets/david-girnstein.jpg">
+<meta name="twitter:image:alt" content="Porträt von David Girnstein">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://girnstein.studio/#website",
+      "url": "https://girnstein.studio/",
+      "name": "David Girnstein",
+      "inLanguage": "de-DE",
+      "publisher": { "@id": "https://girnstein.studio/#person" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://girnstein.studio/#profilepage",
+      "url": "https://girnstein.studio/",
+      "name": "David Girnstein · Creative & AI aus Köln",
+      "inLanguage": "de-DE",
+      "dateModified": "2026-11-24",
+      "isPartOf": { "@id": "https://girnstein.studio/#website" },
+      "mainEntity": { "@id": "https://girnstein.studio/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://girnstein.studio/#person",
+      "name": "David Girnstein",
+      "givenName": "David",
+      "familyName": "Girnstein",
+      "url": "https://girnstein.studio/",
+      "image": "https://girnstein.studio/assets/david-girnstein.jpg",
+      "email": "mailto:david@girnstein.studio",
+      "description": "Creative & AI aus Köln: früher Kamera, Sets und Social Media, heute AI-Agenten, Automatisierung und eigene Apps.",
+      "jobTitle": "Junior AI Operations Manager",
+      "worksFor": { "@type": "Organization", "name": "talentsconnect" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Hochschule Fresenius" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Köln", "addressCountry": "DE" },
+      "knowsAbout": [
+        "Künstliche Intelligenz",
+        "Artificial Intelligence",
+        "Generative AI",
+        "AI-Agenten",
+        "AI Operations",
+        "Automatisierung",
+        "Creative Direction",
+        "Filmmaking",
+        "Produktion",
+        "Social Media Marketing",
+        "User Generated Content",
+        "Produktmanagement",
+        "iOS- und macOS-Entwicklung"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/davidgirnstein/",
+        "https://www.instagram.com/david_girnstein/",
+        "https://cv.girnstein.studio/",
+        "https://ugc.girnstein.studio/",
+        "https://office-shrimp.girnstein.studio/",
+        "https://girnstein-david.framer.website/",
+        "https://github.com/Girni123"
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #F5F4EF;
+    --bg-2: #ECEBE4;
+    --card: #FFFFFF;
+    --ink: #121212;
+    --ink-2: #4A4A46;
+    --ink-3: #7A7A74;
+    --line: #DEDCD3;
+    --accent: #CDFF00;
+    --accent-ink: #4F6400;
+    --radius: 18px;
+    --maxw: 1080px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0B0B0B;
+      --bg-2: #121212;
+      --card: #151515;
+      --ink: #F2F2EE;
+      --ink-2: #BDBDB6;
+      --ink-3: #85857F;
+      --line: #262624;
+      --accent-ink: #CDFF00;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0B0B0B; --bg-2: #121212; --card: #151515; --ink: #F2F2EE;
+    --ink-2: #BDBDB6; --ink-3: #85857F; --line: #262624; --accent-ink: #CDFF00;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--accent); color: #000; }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 16px; }
+  @media (min-width: 720px) { .wrap { padding: 0 32px; } }
+
+  /* Header */
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 0; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .01em; text-decoration: none; font-size: 15px; }
+  .brand i { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 1px rgba(0,0,0,.15); }
+  .nav { display: flex; gap: 20px; font-size: 14px; }
+  .nav a { text-decoration: none; color: var(--ink-2); }
+  .nav a:hover { color: var(--ink); }
+  @media (max-width: 560px) { .nav { display: none; } }
+
+  /* Hero */
+  .hero { display: grid; grid-template-columns: 1fr; gap: 28px; padding: 28px 0 56px; align-items: center; }
+  @media (min-width: 820px) { .hero { grid-template-columns: 1.45fr 1fr; gap: 56px; padding: 56px 0 88px; } }
+  .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 18px; }
+  .eyebrow::before { content: ""; width: 26px; height: 2px; background: var(--accent); }
+  h1 { font-size: clamp(46px, 9vw, 92px); line-height: .95; letter-spacing: -.035em; margin: 0 0 22px; font-weight: 800; }
+  .mark { background: var(--accent); color: #0B0B0B; padding: 0 .14em; border-radius: .12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  .lead { font-size: clamp(20px, 2.4vw, 25px); line-height: 1.4; margin: 0 0 18px; max-width: 30ch; font-weight: 500; letter-spacing: -.01em; }
+  .bio { color: var(--ink-2); margin: 0 0 28px; max-width: 54ch; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid var(--line); background: var(--card); }
+  .btn:hover { border-color: var(--ink-3); }
+  .btn--primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .btn--primary:hover { opacity: .88; }
+  .photo { position: relative; isolation: isolate; margin: 0; justify-self: start; width: min(100%, 360px); }
+  @media (min-width: 820px) { .photo { justify-self: end; } }
+  .photo img { width: 100%; aspect-ratio: 543 / 656; object-fit: cover; border-radius: var(--radius); background: var(--bg-2); }
+  .photo::after { content: ""; position: absolute; inset: auto -10px -10px auto; width: 72px; height: 72px; border-radius: 50%; background: var(--accent); z-index: -1; }
+  .photo figcaption { font-size: 13px; color: var(--ink-3); margin-top: 10px; }
+  @media (max-width: 819px) { .photo { width: 200px; } .photo figcaption { display: none; } }
+
+  /* Sections */
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  .sec-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; margin-bottom: 28px; }
+  h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.1; letter-spacing: -.025em; margin: 0; font-weight: 750; }
+  .sec-head p { margin: 0; color: var(--ink-3); font-size: 15px; max-width: 46ch; }
+
+  /* Tiles */
+  .tiles { display: grid; grid-template-columns: 1fr; gap: 14px; }
+  @media (min-width: 640px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 980px) { .tiles { grid-template-columns: repeat(4, 1fr); } }
+  .tile { display: flex; flex-direction: column; gap: 10px; min-height: 190px; padding: 22px; border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); text-decoration: none; transition: transform .2s ease, border-color .2s ease; }
+  .tile:hover, .tile:focus-visible { transform: translateY(-3px); border-color: var(--ink-3); }
+  .tile__kicker { font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+  .tile__title { font-size: 22px; font-weight: 700; letter-spacing: -.015em; line-height: 1.2; }
+  .tile__text { color: var(--ink-2); font-size: 15px; line-height: 1.5; flex: 1; }
+  .tile__url { font-size: 13px; font-weight: 600; color: var(--accent-ink); display: inline-flex; align-items: center; gap: 6px; }
+  .tile__url::after { content: "→"; transition: transform .2s ease; }
+  .tile:hover .tile__url::after { transform: translateX(3px); }
+
+  /* Two worlds */
+  .split { display: grid; grid-template-columns: 1fr; gap: 14px; }
+  @media (min-width: 820px) { .split { grid-template-columns: 1fr 1fr; } }
+  .col { padding: 26px; border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); }
+  .col h3 { margin: 0 0 4px; font-size: 22px; letter-spacing: -.015em; }
+  .col .sub { margin: 0 0 18px; color: var(--ink-3); font-size: 14px; }
+  .list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .list li { display: grid; gap: 2px; padding-left: 18px; position: relative; }
+  .list li::before { content: ""; position: absolute; left: 0; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 1px rgba(0,0,0,.12); }
+  .list strong { font-weight: 650; }
+  .list span { color: var(--ink-2); font-size: 15px; }
+  .list a { text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+  /* Talks */
+  .talks { display: grid; gap: 14px; }
+  .talk { display: grid; grid-template-columns: 1fr; gap: 6px 28px; padding: 24px; border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); }
+  @media (min-width: 760px) { .talk { grid-template-columns: 190px 1fr; } }
+  .talk__when { font-size: 14px; color: var(--ink-3); font-weight: 600; }
+  .talk__when b { display: block; color: var(--ink); font-size: 17px; }
+  .talk h3 { margin: 0 0 6px; font-size: 20px; letter-spacing: -.01em; line-height: 1.3; }
+  .talk p { margin: 0 0 10px; color: var(--ink-2); font-size: 15px; }
+  .talk ul { margin: 0; padding-left: 18px; color: var(--ink-2); font-size: 15px; }
+  .talk ul li + li { margin-top: 4px; }
+  .badge { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; background: var(--accent); color: #0B0B0B; margin-bottom: 8px; }
+  .talk--soon { background: transparent; border-style: dashed; }
+
+  /* Contact */
+  .contact { display: grid; gap: 18px; }
+  @media (min-width: 820px) { .contact { grid-template-columns: 1.2fr 1fr; align-items: end; } }
+  .contact .big { font-size: clamp(26px, 4.6vw, 46px); font-weight: 750; letter-spacing: -.03em; line-height: 1.1; text-decoration: none; word-break: break-word; }
+  .contact .big:hover { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 4px; text-underline-offset: 6px; }
+  .contact p { margin: 0 0 10px; color: var(--ink-2); }
+  .socials { display: flex; flex-wrap: wrap; gap: 10px; }
+  @media (min-width: 820px) { .socials { justify-content: flex-end; } }
+
+  footer { padding: 8px 0 40px; color: var(--ink-3); font-size: 14px; }
+  .legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; margin-top: 28px; }
+  .legal a { color: var(--ink-2); }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+<!-- gs-network-style:start -->
+<style id="gs-network-style">
+  .gs-net{--gs-accent:#9DBF00;--gs-line:color-mix(in srgb,currentColor 14%,transparent);font:inherit;color:inherit;border-top:1px solid var(--gs-line);margin-top:clamp(28px,4vw,48px);padding-top:clamp(20px,3vw,28px);text-align:left}
+  .gs-net__label{display:flex;align-items:center;gap:.55em;margin:0 0 16px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.6}
+  .gs-net__dot{width:7px;height:7px;border-radius:50%;background:var(--gs-accent,currentColor);flex:none}
+  .gs-net__list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 24px}
+  .gs-net__item a,.gs-net__item span.gs-net__cur{display:block;color:inherit;text-decoration:none;padding:2px 0}
+  .gs-net__name{display:block;font-size:14px;font-weight:600;line-height:1.3}
+  .gs-net__desc{display:block;font-size:12px;line-height:1.4;opacity:.6;margin-top:2px}
+  .gs-net__item a:hover .gs-net__name,.gs-net__item a:focus-visible .gs-net__name{text-decoration:underline;text-decoration-color:var(--gs-accent,currentColor);text-decoration-thickness:2px;text-underline-offset:3px}
+  .gs-net__cur{opacity:.45}
+  @media (max-width:640px){.gs-net__list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<!-- gs-network-style:end -->
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="/"><i aria-hidden="true"></i>girnstein.studio</a>
+      <nav class="nav" aria-label="Seitenbereiche">
+        <a href="#projekte">Projekte</a>
+        <a href="#arbeit">Kreativ &amp; AI</a>
+        <a href="#talks">Talks</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Creative &amp; AI · Köln</p>
+          <h1>David <span class="mark">Girnstein</span></h1>
+          <p class="lead">Früher Kamera, Sets und Social Media. Heute AI-Agenten, Automatisierung und eigene Apps.</p>
+          <p class="bio">Ich komme aus der kreativen Ecke: Social-Media-Design, Filmproduktion und Events wie eine Fashionshow mit 450&nbsp;Gästen im Kölner Bootshaus. Heute arbeite ich bei talentsconnect im Bereich AI Operations, baue mit Teams AI-Agenten und entwickle nebenbei eigene Tools und Apps. Beides gehört für mich zusammen: ein Gefühl dafür, was Menschen sehen wollen, und die Technik, um es schnell zu bauen.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="mailto:david@girnstein.studio">E-Mail schreiben</a>
+            <a class="btn" href="https://www.linkedin.com/in/davidgirnstein/" rel="me noopener" target="_blank">LinkedIn</a>
+            <a class="btn" href="https://cv.girnstein.studio/">Lebenslauf</a>
+          </div>
+        </div>
+        <figure class="photo">
+          <img src="/assets/david-girnstein.jpg" width="543" height="656" alt="Porträt von David Girnstein" fetchpriority="high">
+          <figcaption>David Girnstein, Köln</figcaption>
+        </figure>
+      </div>
+
+      <section id="projekte" aria-labelledby="projekte-h">
+        <div class="sec-head">
+          <h2 id="projekte-h">Wo du mehr findest</h2>
+          <p>Vier Seiten, ein Mensch. Je nachdem, was du suchst.</p>
+        </div>
+        <div class="tiles">
+          <!-- TODO: auf https://portfolio.girnstein.studio/ umstellen, sobald das neue Portfolio live ist -->
+          <a class="tile" href="https://girnstein-david.framer.website/">
+            <span class="tile__kicker">Portfolio</span>
+            <span class="tile__title">Projekte &amp; Arbeiten</span>
+            <span class="tile__text">Kurzfilm, Fashionshow, Kamera, Social Media, Apps: alle Projekte mit Bildern und Hintergründen.</span>
+            <span class="tile__url">Portfolio ansehen</span>
+          </a>
+          <a class="tile" href="https://cv.girnstein.studio/">
+            <span class="tile__kicker">Lebenslauf</span>
+            <span class="tile__title">CV</span>
+            <span class="tile__text">Stationen, Ausbildung, Skills und Zertifikate auf einen Blick, mit PDF zum Download.</span>
+            <span class="tile__url">cv.girnstein.studio</span>
+          </a>
+          <a class="tile" href="https://ugc.girnstein.studio/">
+            <span class="tile__kicker">Content</span>
+            <span class="tile__title">UGC Studio</span>
+            <span class="tile__text">User Generated Content für Marken: Videos, die sich nicht nach Werbung anfühlen.</span>
+            <span class="tile__url">ugc.girnstein.studio</span>
+          </a>
+          <a class="tile" href="https://office-shrimp.girnstein.studio/">
+            <span class="tile__kicker">macOS-App</span>
+            <span class="tile__title">Office Shrimp</span>
+            <span class="tile__text">Menüleisten-App, die an Haltung, Wasser und Pausen erinnert, mit RPG-Shrimp, der mitlevelt.</span>
+            <span class="tile__url">Zur App-Seite</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="arbeit" aria-labelledby="arbeit-h">
+        <div class="sec-head">
+          <h2 id="arbeit-h">Zwei Seiten, ein Kopf</h2>
+          <p>Was ich kreativ gemacht habe und was ich heute mit AI baue.</p>
+        </div>
+        <div class="split">
+          <div class="col">
+            <h3>Kreativ</h3>
+            <p class="sub">Film, Events, Social Media, Design</p>
+            <ul class="list">
+              <li><strong>Crosswired Fashionshow im Bootshaus Köln</strong><span>Producer und Creative Director: 450&nbsp;Gäste, 11&nbsp;Designer:innen, 68&nbsp;Leute im Team, mit NFC, AR und 3D-Scans. <a href="https://www.rtl.de/rtl-west/junger-student-bringt-digitale-fashionshow-ins-bootshaus-koeln-id4473418.html" rel="noopener" target="_blank">Bericht bei RTL West</a></span></li>
+              <li><strong>Filmproduktion</strong><span>Produktion am Set, etwa beim Kurzfilm „Revue“, Postproduktions-Planung beim WDR, Aufnahmeleitung bei der AMD Stage.</span></li>
+              <li><strong>Kamera &amp; Social Media</strong><span>Social-Content für Fortuna Köln, 360-Grad-Kampagne, BTS für „Suppressed Gods“.</span></li>
+              <li><strong>Design &amp; Motion</strong><span>Social-Media-Ads, Animation und 3D bei MUYDOZO, danach freiberuflich für Fashion, Tech und Media.</span></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>AI &amp; Tech</h3>
+            <p class="sub">Agenten, Automatisierung, eigene Apps</p>
+            <ul class="list">
+              <li><strong>AI Operations bei talentsconnect</strong><span>AI-Agenten und Automatisierungen für HR und Recruiting, plus Hackdays, in denen Teams ihre eigenen Agenten bauen.</span></li>
+              <li><strong>Chroni &amp; Sparki</strong><span>Chroni ist mein AI-Assistent, der meinen Kalender plant. Sparki ist ein Agent für Social-Media-Content.</span></li>
+              <li><strong>AI-Video-Pipelines</strong><span>Lokale Pipelines, die Videos mit Voice-Over automatisch zusammensetzen und veröffentlichen.</span></li>
+              <li><strong>Lokale LLMs &amp; eigenes Life-OS</strong><span>Ein eigenes Sprachmodell auf dem Mac mini, per Telegram erreichbar, lokale Sprachausgabe und Dashboards für Alltag, Gesundheit und Laufen.</span></li>
+              <li><strong>Apps &amp; NFC</strong><span>Office Shrimp (macOS), MONO (iOS) und ein NFC-System, das die Echtheit von Kleidung prüft.</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="talks" aria-labelledby="talks-h">
+        <div class="sec-head">
+          <h2 id="talks-h">Talks &amp; Workshops</h2>
+          <p>Ich zeige gern, wie man AI-Agenten baut, ohne Tech-Hintergrund.</p>
+        </div>
+        <div class="talks">
+          <article class="talk">
+            <div class="talk__when"><b>18.–19. Nov. 2026</b>KI-X HR, Berlin</div>
+            <div>
+              <h3>Hackdays: AI-Agenten für HR in Stunden statt Wochen</h3>
+              <p>Zusammen mit dem talentsconnect-Team haben wir mit HR-Leuten echte Agenten gebaut, mit den Tools, die sie im Job ohnehin haben.</p>
+              <ul>
+                <li>„Hackday statt Vortrag: In drei Stunden zum einsatzfähigen HR-Agenten“</li>
+                <li>„Hackday kompakt: Grundlagen agentischer KI in 70 Minuten“</li>
+              </ul>
+            </div>
+          </article>
+          <article class="talk talk--soon">
+            <div class="talk__when"><b>Demnächst</b>Smart Recruiting Days</div>
+            <div>
+              <span class="badge">Demnächst</span>
+              <h3>Speaker bei den Smart Recruiting Days</h3>
+              <p>Details folgen.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="kontakt" aria-labelledby="kontakt-h">
+        <div class="contact">
+          <div>
+            <h2 id="kontakt-h" style="margin-bottom:12px">Lass uns reden</h2>
+            <p>Projekt, Workshop, Talk oder einfach eine Idee? Schreib mir.</p>
+            <a class="big" href="mailto:david@girnstein.studio">david@girnstein.studio</a>
+          </div>
+          <div class="socials">
+            <a class="btn" href="https://www.linkedin.com/in/davidgirnstein/" rel="me noopener" target="_blank">LinkedIn</a>
+            <a class="btn" href="https://www.instagram.com/david_girnstein/" rel="me noopener" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- gs-network:start -->
+      <div class="gs-net" role="navigation" aria-label="Mehr von David Girnstein">
+        <p class="gs-net__label"><span class="gs-net__dot" aria-hidden="true"></span>Mehr von David Girnstein</p>
+        <ul class="gs-net__list">
+          <li class="gs-net__item"><span class="gs-net__cur" aria-current="page"><span class="gs-net__name">girnstein.studio</span><span class="gs-net__desc">Du bist hier</span></span></li>
+          <li class="gs-net__item"><a href="https://cv.girnstein.studio/"><span class="gs-net__name">CV</span><span class="gs-net__desc">Lebenslauf &amp; Erfahrung</span></a></li>
+          <li class="gs-net__item"><a href="https://ugc.girnstein.studio/"><span class="gs-net__name">UGC Studio</span><span class="gs-net__desc">Content für Marken</span></a></li>
+          <li class="gs-net__item"><a href="https://office-shrimp.girnstein.studio/"><span class="gs-net__name">Office Shrimp</span><span class="gs-net__desc">macOS-App</span></a></li>
+        </ul>
+      </div>
+      <!-- gs-network:end -->
+      <div class="legal">
+        <span>© 2026 David Girnstein · Köln</span>
+        <a href="/impressum.html">Impressum &amp; Datenschutz</a>
+      </div>
+    </footer>
+  </div>
+</body>
 </html>
